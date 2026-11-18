@@ -1,0 +1,108 @@
+[worldserver]
+########################################
+# mod-temucraft-racials
+########################################
+#
+#    Temucraft.Racials.Enable
+#        Description: Racials at their best: shorter cooldowns and the strongest versions over the years.
+#        Default:     1
+#
+#    Temucraft.Racials.Cooldowns
+#        Description: Shorten the cooldown of every racial (spells ranked "Racial", custom races' included) by
+#                     CooldownCut %, never above MaxCooldown nor below MinCooldown seconds (a racial already below
+#                     MinCooldown keeps its own). Berserking/Perception/Gift of the Naaru 3 min -> 2, 2 min racials -> 90
+#                     sec. CooldownOverrides: "spell:seconds" pairs that win over the rule.
+#        Default:     1, 25, 120, 45, "58984:60 20589:60" (Shadowmeld and Escape Artist 1 min)
+#
+#    Temucraft.Racials.Stoneform
+#        Description: Stoneform also removes harmful curses and magic, and cuts damage taken by 10% while it lasts.
+#        Default:     1
+#
+#    Temucraft.Racials.GiftOfTheNaaru
+#        Description: Gift of the Naaru heals at least Percent of the target's maximum health.
+#        Default:     1 (20%)
+#
+#    Temucraft.Racials.Hardiness
+#        Description: Hardiness (stuns) and Da Voodoo Shuffle (movement impairing effects) shorten them by Percent.
+#                     Needs a restart.
+#        Default:     1 (20%, stock 15%)
+#
+#    Temucraft.Racials.HumanSpirit
+#        Description: The Human Spirit gives Percent more Spirit. Needs a restart.
+#        Default:     1 (10%, stock 3%)
+#
+#    Temucraft.Racials.Diplomacy
+#        Description: Diplomacy also gives Discount % off vendor prices with factions you're Friendly with or better
+#                     (ExaltedDiscount % instead at Exalted). Defaults: 1, 5, 25
+#                     (on top of the reputation discount; the 10% reputation gain stays).
+#        Default:     1 (5%)
+#
+#    Temucraft.Racials.ExpansiveMind
+#        Description: Expansive Mind also raises maximum rage, energy and runic power by Percent.
+#        Default:     1 (5%)
+
+Temucraft.Racials.Enable = 1
+Temucraft.Racials.Cooldowns = 1
+Temucraft.Racials.CooldownCut = 25
+Temucraft.Racials.MaxCooldown = 120
+Temucraft.Racials.MinCooldown = 45
+Temucraft.Racials.CooldownOverrides = "58984:60 20589:60"
+Temucraft.Racials.Stoneform = 1
+Temucraft.Racials.GiftOfTheNaaru = 1
+Temucraft.Racials.GiftOfTheNaaru.Percent = 20
+Temucraft.Racials.Hardiness = 1
+Temucraft.Racials.Hardiness.Percent = 20
+Temucraft.Racials.HumanSpirit = 1
+Temucraft.Racials.HumanSpirit.Percent = 10
+Temucraft.Racials.Diplomacy = 1
+Temucraft.Racials.Diplomacy.Discount = 5
+Temucraft.Racials.Diplomacy.ExaltedDiscount = 25
+Temucraft.Racials.ExpansiveMind = 1
+Temucraft.Racials.ExpansiveMind.Percent = 5
+
+########################################
+# mod-temucraft-heritage
+########################################
+#
+#    Temucraft.Heritage.Enable
+#        Description: Players may take on the racial traits of another race instead of their own.
+#        Default:     1
+#
+#    Temucraft.Heritage.MinLevel
+#        Description: Level from which a player can change their heritage.
+#        Default:     10
+#
+#    Temucraft.Heritage.Cost
+#        Description: Price in copper of taking on another race's traits (going back to your own is free).
+#        Default:     100000 (10 gold)
+#
+#    Temucraft.Heritage.CooldownHours
+#        Description: Hours before the heritage can be changed again (going back included). 0 = no wait.
+#        Default:     24
+#
+#    Temucraft.Heritage.SameFaction
+#        Description: Only races of the player's own faction can be chosen.
+#        Default:     0
+#
+#    Temucraft.Heritage.Bonus.Count
+#        Description: How many "second racials" a character may carry on top of their heritage.
+#                     The pool is every racial of a race that can't be played on this server.
+#                     0 = no second racials.
+#        Default:     1
+#
+#    Temucraft.Heritage.Bonus.Cost
+#        Description: Copper to take a second racial (dropping one is free).
+#        Default:     100000 (10 gold)
+#
+#    Temucraft.Heritage.Bonus.Exclude
+#        Description: Spell ids kept out of the second-racial pool, comma separated.
+#        Default:     ""
+
+Temucraft.Heritage.Enable = 1
+Temucraft.Heritage.MinLevel = 10
+Temucraft.Heritage.Cost = 100000
+Temucraft.Heritage.CooldownHours = 24
+Temucraft.Heritage.SameFaction = 0
+Temucraft.Heritage.Bonus.Count = 1
+Temucraft.Heritage.Bonus.Cost = 100000
+Temucraft.Heritage.Bonus.Exclude = ""
